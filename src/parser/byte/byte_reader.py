@@ -1,6 +1,6 @@
-from src.parser.error.parser_error import CorruptSaveError
-from src.parser.byte.alignment_enum import Alignment
-from src.parser.byte.binary_readable_interface import BinaryReadable
+from parser.error.parser_error import CorruptSaveError
+from parser.byte.alignment_enum import Alignment
+from parser.byte.binary_readable_interface import BinaryReadable
 
 class ByteReader(BinaryReadable):
 

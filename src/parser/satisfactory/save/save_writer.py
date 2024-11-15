@@ -1,13 +1,13 @@
 import zlib
-from src.parser.byte.alignment import Alignment
-from src.parser.byte.byte_writer import ByteWriter
-from src.parser.error.parser_error import CompressionLibraryError, ParserError, UnsupportedVersionError
-from src.parser.file.types import ChunkCompressionInfo, ChunkSummary, CompressionAlgorithmCode
-from src.parser.satisfactory.types.structs.md5_hash import MD5Hash
-from src.parser.satisfactory.save.level import Level
-from src.parser.satisfactory.save.satisfactory_save import SatisfactorySave
-from src.parser.satisfactory.save.save_reader import Grids, SaveBodyValidation, SaveReader
-from src.parser.satisfactory.save.save_types import SatisfactorySaveHeader
+from parser.byte.alignment import Alignment
+from parser.byte.byte_writer import ByteWriter
+from parser.error.parser_error import CompressionLibraryError, ParserError, UnsupportedVersionError
+from parser.file.types import ChunkCompressionInfo, ChunkSummary, CompressionAlgorithmCode
+from parser.satisfactory.types.structs.md5_hash import MD5Hash
+from parser.satisfactory.save.level import Level
+from parser.satisfactory.save.satisfactory_save import SatisfactorySave
+from parser.satisfactory.save.save_reader import Grids, SaveBodyValidation, SaveReader
+from parser.satisfactory.save.save_types import SatisfactorySaveHeader
 
 
 class SaveWriter(ByteWriter):

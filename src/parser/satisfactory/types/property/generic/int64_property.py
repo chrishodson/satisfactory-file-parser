@@ -1,7 +1,7 @@
-from ....byte.binary_readable import BinaryReadable
-from ....byte.byte_writer import ByteWriter
-from ...structs.guid_info import GUIDInfo
-from .abstract_base_property import AbstractBaseProperty
+from src.parser.byte.binary_readable import BinaryReadable
+from src.parser.byte.byte_writer import ByteWriter
+from src.parser.satisfactory.types.structs.guid_info import GUIDInfo
+from src.parser.satisfactory.types.property.generic.abstract_base_property import AbstractBaseProperty
 
 def is_int64_property(property: any) -> bool:
     return not isinstance(property, list) and property.type == 'Int64Property'

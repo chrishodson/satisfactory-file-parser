@@ -1,5 +1,5 @@
 from parser.satisfactory.blueprint.blueprint_types import *
-from parser.satisfactory.save.level_class import *
+from parser.satisfactory.save.level import *
 from parser.satisfactory.save.satisfactory_save import *
 from parser.satisfactory.save.save_types import *
 from parser.satisfactory.types.objects.save_component import *
@@ -71,7 +71,7 @@ from parser.satisfactory.blueprint.blueprint_writer import BlueprintConfigWriter
 from parser.satisfactory.save.save_reader import SaveReader
 from parser.satisfactory.save.save_writer import SaveWriter
 from parser.stream.reworked.save_stream_json_stringifier import SaveStreamJsonStringifier
-from parser.stream.reworked.save_stream_writer_class import SaveStreamWriter
+from parser.stream.reworked.save_stream_writer import SaveStreamWriter
 
 from parser.error.parser_error import *
 

@@ -1,9 +1,9 @@
-from parser.byte.binary_readable import BinaryReadable
-from parser.byte.byte_writer import ByteWriter
-from parser.error.parser_error import ParserError
-from parser.satisfactory.types.property.generic.abstract_base_property import PropertiesMap
-from parser.satisfactory.types.property.properties_list import PropertiesList
-from parser.satisfactory.types.property.special.special_properties import SpecialProperties
+from src.parser.byte.binary_readable import BinaryReadable
+from src.parser.byte.byte_writer import ByteWriter
+from src.parser.error.parser_error import ParserError
+from src.parser.satisfactory.types.property.generic.abstract_base_property import PropertiesMap
+from src.parser.satisfactory.types.property.properties_list import PropertiesList
+from src.parser.satisfactory.types.property.special.special_properties import SpecialProperties
 
 class SaveObjectHeader:
     def __init__(self, type_path: str, root_object: str, instance_name: str):

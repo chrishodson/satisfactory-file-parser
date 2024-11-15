@@ -1,6 +1,6 @@
-from ....byte.binary_readable import BinaryReadable
-from ....byte.byte_writer import ByteWriter
-from ....error.parser_error import UnimplementedError
+from ......byte.binary_readable import BinaryReadable
+from ......byte.byte_writer import ByteWriter
+from ......error.parser_error import UnimplementedError
 from .bool_array_property import BoolArrayProperty, is_bool_array_property
 from .byte_array_property import ByteArrayProperty, is_byte_array_property
 from .double_array_property import DoubleArrayProperty, is_double_array_property

@@ -1,11 +1,11 @@
-from .error.parser_error import UnsupportedVersionError
-from .file_types import ChunkSummary
-from .satisfactory.blueprint.blueprint_reader import BlueprintConfigReader, BlueprintReader
-from .satisfactory.blueprint.blueprint_writer import BlueprintConfigWriter, BlueprintWriter
-from .satisfactory.blueprint.blueprint_types import Blueprint
-from .satisfactory.save.satisfactory_save import SatisfactorySave
-from .satisfactory.save.save_reader import SaveReader
-from .satisfactory.save.save_writer import SaveWriter
+from src.parser.error.parser_error import UnsupportedVersionError
+from src.parser.file_types import ChunkSummary
+from src.parser.satisfactory.blueprint.blueprint_reader import BlueprintConfigReader, BlueprintReader
+from src.parser.satisfactory.blueprint.blueprint_writer import BlueprintConfigWriter, BlueprintWriter
+from src.parser.satisfactory.blueprint.blueprint_types import Blueprint
+from src.parser.satisfactory.save.satisfactory_save import SatisfactorySave
+from src.parser.satisfactory.save.save_reader import SaveReader
+from src.parser.satisfactory.save.save_writer import SaveWriter
 
 
 class Parser:

@@ -1,9 +1,9 @@
 import os
 import json
 import pytest
-from parser.parser import Parser
-from parser.satisfactory.save.satisfactory_save import SatisfactorySave
-from parser.stream.reworked.readable_stream_parser import ReadableStreamParser
+from satisfactory_file_parser.parser import Parser
+from satisfactory_file_parser.satisfactory.save.satisfactory_save import SatisfactorySave
+from satisfactory_file_parser.stream.reworked.readable_stream_parser import ReadableStreamParser
 
 def setup_module(module):
     global file_log

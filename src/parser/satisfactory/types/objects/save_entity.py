@@ -1,8 +1,8 @@
-from ...byte.binary_readable import BinaryReadable
-from ...byte.byte_writer import ByteWriter
-from ..structs.ObjectReference import ObjectReference
-from ..structs.Transform import Transform
-from .SaveObject import SaveObject
+from src.parser.byte.binary_readable import BinaryReadable
+from src.parser.byte.byte_writer import ByteWriter
+from src.parser.satisfactory.types.structs.object_reference import ObjectReference
+from src.parser.satisfactory.types.structs.transform import Transform
+from src.parser.satisfactory.types.objects.save_object import SaveObject
 
 def is_save_entity(obj):
     return obj.type == 'SaveEntity'

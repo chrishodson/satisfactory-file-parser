@@ -1,10 +1,10 @@
-import pako from "pako"
-from src.parser.byte.alignment_enum import Alignment
-from src.parser.byte.byte_reader_class import ByteReader
+import zlib
+from src.parser.byte.alignment import Alignment
+from src.parser.byte.byte_reader import ByteReader
 from src.parser.error.parser_error import CompressionLibraryError, CorruptSaveError, ParserError, UnsupportedVersionError
 from src.parser.file_types import ChunkCompressionInfo
 from src.parser.satisfactory.types.structs.md5_hash import MD5Hash
-from src.parser.satisfactory.save.level_class import Level
+from src.parser.satisfactory.save.level import Level
 from src.parser.satisfactory.save.save_types import RoughSaveVersion, SatisfactorySaveHeader
 
 DEFAULT_SATISFACTORY_CHUNK_HEADER_SIZE = 49
@@ -125,9 +125,9 @@ class SaveReader(ByteReader):
             self.current_byte = 0
 
             try:
-                current_inflated_chunk = pako.inflate(current_chunk)
+                current_inflated_chunk = zlib.decompress(current_chunk)
                 current_chunks.append(current_inflated_chunk)
-            except Exception as err:
+            except zlib.error as err:
                 raise CompressionLibraryError("Failed to inflate compressed save data. " + str(err))
 
         new_chunk_length = sum(len(cc) for cc in current_chunks)

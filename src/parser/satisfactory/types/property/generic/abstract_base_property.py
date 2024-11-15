@@ -1,4 +1,4 @@
-from src.parser.satisfactory.types.structs.GUIDInfo import GUIDInfo
+from parser.satisfactory.types.structs.guid_info import GUIDInfo
 
 
 class AbstractBaseProperty:

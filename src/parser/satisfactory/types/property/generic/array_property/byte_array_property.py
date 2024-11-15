@@ -1,5 +1,5 @@
-from .......byte.binary_readable import BinaryReadable
-from .......byte.byte_writer import ByteWriter
+from ......byte.binary_readable import BinaryReadable
+from ......byte.byte_writer import ByteWriter
 from ..abstract_base_property import AbstractBaseProperty
 from ..byte_property import ByteProperty
 

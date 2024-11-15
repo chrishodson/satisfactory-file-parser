@@ -1,14 +1,14 @@
-from src.parser.byte.alignment import Alignment
-from src.parser.byte.byte_writer import ByteWriter
-from src.parser.error.parser_error import ParserError
-from src.parser.file.types import ChunkCompressionInfo, ChunkSummary
-from src.parser.satisfactory.save.level import Level
-from src.parser.satisfactory.save.save_writer import SaveWriter
-from src.parser.satisfactory.types.objects.save_component import SaveComponent, isSaveComponent
-from src.parser.satisfactory.types.objects.save_entity import SaveEntity, isSaveEntity
-from src.parser.satisfactory.types.structs.col4 import col4
-from src.parser.satisfactory.types.structs.object_reference import ObjectReference
-from src.parser.satisfactory.blueprint.blueprint_types import BlueprintConfig, BlueprintHeader
+from parser.byte.alignment import Alignment
+from parser.byte.byte_writer import ByteWriter
+from parser.error.parser_error import ParserError
+from parser.file.types import ChunkCompressionInfo, ChunkSummary
+from parser.satisfactory.save.level import Level
+from parser.satisfactory.save.save_writer import SaveWriter
+from parser.satisfactory.types.objects.save_component import SaveComponent, isSaveComponent
+from parser.satisfactory.types.objects.save_entity import SaveEntity, isSaveEntity
+from parser.satisfactory.types.structs.col4 import col4
+from parser.satisfactory.types.structs.object_reference import ObjectReference
+from parser.satisfactory.blueprint.blueprint_types import BlueprintConfig, BlueprintHeader
 
 
 class BlueprintWriter(ByteWriter):
