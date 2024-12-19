@@ -227,6 +227,10 @@ const firstStack = inventoryStacks.values[0];
 // modify original save object
 modifyObjects(firstContainer);
 ```
+
+# Python Wrapper
+A Python wrapper is available for this TypeScript code. The wrapper allows you to parse and write Satisfactory save files and blueprints using Python. For detailed documentation, please refer to [PYTHON.md](PYTHON.md).
+
 # [Auto-Generated TypeDoc Reference](https://raw.githack.com/etothepii4/satisfactory-file-parser/main/docs/index.html).
 
 # [Basic Guide](https://github.com/etothepii4/satisfactory-file-parser/blob/main/GUIDE.md).
